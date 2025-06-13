@@ -19,4 +19,4 @@
 
 
 ### Демо-версия
-[https://innabunny.github.io/table-route/](https://innabunny.github.io/angular-route-table/)
+[(https://innabunny.github.io/angular-route-table/)](https://innabunny.github.io/angular-route-table/)
