@@ -1,0 +1,29 @@
+.route-table {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #a5edf0;
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #68ebf0;
+}
+
+tr:hover {
+  background-color: #a5edf052;
+}

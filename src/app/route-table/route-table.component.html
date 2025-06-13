@@ -1,0 +1,25 @@
+<div class="route-table">
+  <div *ngIf="isLoading" class="loader">Подождите, идет загрузка данных</div>
+  <table *ngIf="!isLoading">
+    <thead>
+      <tr>
+        <th (click)="sortData('address')">
+          Адрес назначения {{getSortIcon('address')}}
+        </th>
+        <th (click)="sortData('gateway')">
+          Шлюз {{getSortIcon('gateway')}}
+        </th>
+        <th (click)="sortData('interface')">
+          Интерфейс {{getSortIcon('interface')}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let route of routes">
+        <td>{{route.address}}</td>
+        <td>{{route.gateway}}</td>
+        <td>{{route.interface}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
