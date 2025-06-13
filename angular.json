@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "route-table": {
+    "angular-route-table": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "baseHref": "/angular-route-table/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -31,6 +30,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular-route-table/",
               "budgets": [
                 {
                   "type": "initial",
