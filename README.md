@@ -1,4 +1,4 @@
-№ 🌐 Route Table Manager
+# 🌐 Route Table Manager
 
 ### Этот Angular-проект — мини-демо таблицы сетевых маршрутов с "умной" сортировкой:
 
@@ -19,4 +19,4 @@
 
 
 ### Демо-версия
-https://innabunny.github.io/table-route/
+[https://innabunny.github.io/table-route/](https://innabunny.github.io/angular-route-table/)
