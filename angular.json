@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
+            "outputPath": "dist/angular-route-table",
+            "index": "src/index.html",
             "polyfills": [
               "zone.js"
             ],
@@ -26,11 +27,15 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "baseHref": "/angular-route-table"
           },
           "configurations": {
             "production": {
-              "baseHref": "/angular-route-table/",
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -57,10 +62,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "route-table:build:production"
+              "buildTarget": "angular-route-table:build:production"
             },
             "development": {
-              "buildTarget": "route-table:build:development"
+              "buildTarget": "angular-route-table:build:development"
             }
           },
           "defaultConfiguration": "development"

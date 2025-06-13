@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --output-path dist/angular-route-table --base-href /angular-route-table/ && cp -r dist/angular-route-table/browser/* dist/angular-route-table/ && npx angular-cli-ghpages --dir=dist/angular-route-table"
   },
   "private": true,
   "dependencies": {
